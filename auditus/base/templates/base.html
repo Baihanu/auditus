@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auditus - Laboratório de Audição e Equilíbrio</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicons/favicon-32x32.png' %}">
+
+  <!--- Bootstrap CSS --->
+  <link rel="stylesheet" href="{% static 'css/Bootstrap-5/css/bootstrap.min.css' %}">
+
+  <!--- Main CSS --->
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-light bg_auditus">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'img/Auditus.png' %}" alt="Logo Auditus" width="200px">
+      </a>
+    </div>
+  </nav>
+
+
+  {% block content %}
+  {% endblock content %}
+
+  <footer class="footer">
+    <div class="row">
+      <div class="text-white">
+        Auditus Laboratório de Audição e Equilíbrio - Todos os Direitos Reservados
+      </div>
+      <div class="text-white">
+        Avenida Júlio de Castilhos, 2101, sala 65 | Caxias do Sul - RS | 95010-005
+      </div>
+    </div>
+  </footer>
+  <!--- Bootstrap JS --->
+  <script src="{% static 'js/Bootstrap-5/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!--- Main JS --->
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
